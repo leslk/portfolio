@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap');
+* {
+    box-sizing: content-box;
+    font-family: 'Antonio', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+#app {
+    margin: 0 auto;
+    overflow:hidden;
+    font-weight: normal;
+  }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+section {
+    padding: 2rem;
+    background-color: #ececec;
+    background-color: rgba($color: #ececec, $alpha: 1.0);
+}
