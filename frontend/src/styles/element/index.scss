@@ -1,0 +1,66 @@
+/* Override Element-Plus SCSS rules */
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  $colors: (
+      (
+        'primary': (
+          'base': #597DFF,
+        ),
+        'success': (
+          'base': #858ae3,
+        ),
+        'tertiary': (
+          'base': #858ae3,
+        ),
+        'silver': (
+          'base': #DCE1DE,
+        ),
+        'grey': (
+          'base': #F7FCF9,
+        )
+      )
+    )
+);
+
+
+@use "element-plus/theme-chalk/src/index.scss" as *;
+@import "../../assets/reboot.scss";
+
+.el-input__inner, .el-textarea__inner {
+  font-size: 16px !important;
+  font-weight: 200 !important;
+  color: white !important;
+}
+
+.el-form-item__label {
+  color: white !important;
+  font-size: 20px !important;
+}
+
+.el-form-item {
+  padding: 5px;
+}
+
+.el-input__wrapper, .el-textarea__inner {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: 1px solid white;
+  border-radius: 5px !important;
+  color: white !important;
+}
+
+.el-form-item__label::before, .el-form-item__error {
+  color: #597dff !important;
+}
+
+.el-form-item__error {
+  font-size: 16px !important;
+  padding: 5px;
+}
+
+.el-button {
+  color: white !important;
+}
+
+.el-icon .el-drawer__close {
+  color: black;
+}
